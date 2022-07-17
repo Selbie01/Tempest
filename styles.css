@@ -14,22 +14,32 @@ ul{
   background-color: #303030;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  margin-left: auto;
 }
 li {
     float: left;
+    position: relative;
+}
+li::before{
+    content: '';
+    border:  .1rem  solid var(--text-primary);
+    position: absolute;
+    display: inline-block;
+}
+li::after{
+    content: '';
+    border: .1rem solid var(--text-primary);
+    position: absolute;
+    display: inline-block;
 }
 li a {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: #EDF1FF;
     text-align: center;
     padding: .8rem 1rem;
 }
-li a:hover:not(.active){
+li:hover {
     background-color: #111;
-}
-.active {
-    background-color: #4884EE;
 }
