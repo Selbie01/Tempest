@@ -1,7 +1,35 @@
 :root {
+	--text-primary: #EDF1FF;
+	--bg-primary:  #4884EE; 
+	--bg-secondary: #A2C5FE;  /*#ADCCEF;*/
+	--bd-primary: #303030;
+	--font-primary: 'Roboto', sans-serif;
+} 
 
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #303030;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-left: auto;
 }
-
-ul {
-    
+li {
+    float: left;
+}
+li a {
+    display: block;
+    text-decoration: none;
+    color: #EDF1FF;
+    text-align: center;
+    padding: .8rem 1rem;
+}
+li a:hover:not(.active){
+    background-color: #111;
+}
+.active {
+    background-color: #4884EE;
 }
