@@ -3,7 +3,7 @@
 	--bg-primary:  #4884EE; 
 	--bg-secondary:#ADCCEF;
 	--bd-primary: #303030;
-	--font-primary: 'Roboto', sans-serif;
+	--font-primary: 'Roboto', 'Roboto';
 } 
 
 ul{
@@ -12,6 +12,7 @@ ul{
   padding: 0;
   overflow: hidden;
   background-color: var(--bg-primary);
+  border: .125rem solid var(--bd-primary);
   position: fixed;
   top: 0;
   left: 0;
@@ -24,109 +25,122 @@ ul{
 li {
     float: left;
     position: relative;
+
 }
 li a {
     display: inline-block;
     text-decoration: none;
-    color: #EDF1FF;
     text-align: center;
     padding: .8rem 1rem;
 }
-li::before{
-    content: '';
+#home::before{
+    content: 'Home';
     position: absolute;
-    top: .25em;
-    bottom: .25em;
+    top: 3.5em;
+    bottom: 0;
     left: .25em;
     right: .25em;
     transform: scale(0,1);
     transition: transform ease-out 250ms;
+    list-style-type: none;
+    font-size: .75rem;
+    color: var(--bd-primary);
+    font-family: var(--font-primary);
+    text-shadow: .02rem .02rem .02rem #303030;
 }
-li::after{
+#home:after{
     content: '';
     position: absolute;
-    display: inline;
-    top: .25em;
-    bottom: .25em;
+    display: inline-block;
+    top: .10em;
+    bottom: .10rem;
     left: .25em;
     right: .25em;
     transform: scale(1,0);
     transition: transform ease-out 250ms;
 }
-li:hover:before{
-    transform: scale(1,1);
-    border-top: .1rem solid var(--bd-primary);
-    border-bottom:  .1rem solid var(--bd-primary);
-    border-radius: .5rem;
+#home:hover:before{
+    transform: scale(1,1); 
     
 }
-li:hover::after {
+#home:hover::after {
     transform: scale(1,1);
-    border-left: .1rem solid var(--bd-primary);
-    border-right:  .1rem solid var(--bd-primary);
+    border: .125rem solid var(--bd-primary);
     border-radius: .5rem;
     background-color: var(--text-primary);
     z-index: -1;
 }
- li #home #user {
-    float: left;
-    position: relative;
-}
-li #settings {
-    float: right;
-    position: relative;
-}
- #home::after{
-    content: ' Home';
-    color: var(--bd-primary);
+#user::before{
+    content: 'User';
     position: absolute;
-    display: inline-block;
     top: 3.5em;
-    bottom: .25em;
+    bottom: 0;
     left: .25em;
     right: .25em;
     transform: scale(0,1);
     transition: transform ease-out 250ms;
+    list-style-type: none;
     font-size: .75rem;
-    z-index: 2;
-}
-#home:hover::after {
-    transform: scale(1,1);
-    border: none;
-}
-#user::after{
-    content: ' User';
     color: var(--bd-primary);
+    font-family: var(--font-primary);
+    text-shadow: .02rem .02rem .02rem #303030;
+}
+#user:after{
+    content: '';
     position: absolute;
     display: inline-block;
-    top: 3.5em;
-    bottom: .25em;
+    top: .10em;
+    bottom: .10rem;
     left: .25em;
     right: .25em;
-    transform: scale(0,1);
+    transform: scale(1,0);
     transition: transform ease-out 250ms;
-    font-size: .75rem;
+}
+#user:hover:before{
+    transform: scale(1,1); 
+    
 }
 #user:hover::after {
     transform: scale(1,1);
-    border: none;
+    border: .125rem solid var(--bd-primary);
+    border-radius: .5rem;
+    background-color: var(--text-primary);
+    z-index: -1;
 }
-#settings::after{
-    content: ' Settings';
-    color: var(--bd-primary);
+#settings::before{
+    content: 'Settings';
     position: absolute;
-    display: inline-block;
-    top: 3.5em;
-    bottom: .25em;
+    top: 3.55em;
+    bottom: 0;
     left: .25em;
     right: .25em;
     transform: scale(0,1);
     transition: transform ease-out 250ms;
+    list-style-type: none;
     font-size: .75rem;
-    z-index: 2;
+    color: var(--bd-primary);
+    font-family: var(--font-primary);
+    text-shadow: .02rem .02rem .02rem #303030;
+}
+#settings:after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: .10em;
+    bottom: .10rem;
+    left: .25em;
+    right: .25em;
+    transform: scale(1,0);
+    transition: transform ease-out 250ms;
+}
+#settings:hover:before{
+    transform: scale(1,1); 
+    
 }
 #settings:hover::after {
     transform: scale(1,1);
-    border: none;
+    border: .125rem solid var(--bd-primary);
+    border-radius: .5rem;
+    background-color: var(--text-primary);
+    z-index: -1;
 }
-
