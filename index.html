@@ -7,14 +7,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Frenetic</title>
-    <link rel = "stylesheet" href = "styles.css">
+<title>Tempest</title>
+<link rel = "stylesheet" href = "css/styles.css">
+<script src="script.js"></script>
 </head>
 <body>
- <ul>
-    <li style = "border-right: solid .125rem #303030;"><a href ="#" id = "home"><img class = "icons" src = "flash.png"></a></li>
-    <li style = "border-right: solid .125rem #303030;"><a href = "#" id = "user"><img  class = "icons"  src = "user.png"></a></li>
-    <li style = "float: right; border-left: solid .125rem #303030;"><a href = "#" id = "settings"><img class = "icons" src = "management.png"></a></li>
- </ul>   
+    <header>
+        <div>
+ <ul class = "header">
+    <li style = "border-right: solid .125rem #303030;"><a href ="#" id = "home"><img class = "icons" src = "img/home.png" alt = "home"></a></li>
+    <li style = "border-right: solid .125rem #303030;"><a href = "#" id = "user"><img  class = "icons"  src = "img/user.png" alt = "user"></a></li>
+    <li style = "float: right; border-left: solid .125rem #303030;"><a href = "#" id = "settings"><img class = "icons" src = "img/management.png" alt = "settings"></a></li>
+ </ul>
+    <div>
+</header>
+<main></main>
+        <div class = "social-box">
+             <ul>
+            <li class = "photo-box">photos here</li>    
+            <div class = "interaction-box">
+               <li><img style = "height: 2em;" class = "heart" id = "heart" src = "img/like.png" alt = "like" onclick = "likeClick()"></li>
+                <li><img style = "height: 2em;" class = "comment" id = "comment" src = "img/comment.png" alt = "comment" onclick = "comClick()"></li>
+            </div>
+            </ul>
+
+        </div>
+    </div>
+ </main>
 </body>
 </html>
