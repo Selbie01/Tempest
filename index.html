@@ -13,23 +13,24 @@
 </head>
 <body>
     <header>
-        <div>
  <ul class = "header">
-    <li style = "border-right: solid .125rem #303030;"><a href ="#" id = "home"><img class = "icons" src = "img/home.png" alt = "home"></a></li>
-    <li style = "border-right: solid .125rem #303030;"><a href = "#" id = "user"><img  class = "icons"  src = "img/user.png" alt = "user"></a></li>
-    <li style = "float: right; border-left: solid .125rem #303030;"><a href = "#" id = "settings"><img class = "icons" src = "img/management.png" alt = "settings"></a></li>
+    <li><a href = "#" id = "user"><img  class = "icons"  src = "img/user.png" alt = "user"></a></li>
+    <li><a href ="index.html" id = "home"><img class = "icons" src = "img/home.png" alt = "home"></a></li>
+    <li><a href = "#" id = "settings"><img class = "icons" src = "img/management.png" alt = "settings"></a></li>
+    <li><div class = "search-bar"><input type = "text" placeholder="Search" class="search"><button style = "border: none;"><image src = "img/search.png" alt class = "icons"></button></div></li>
  </ul>
-    <div>
 </header>
 <main></main>
         <div class = "social-box">
-             <ul>
-            <li class = "photo-box">photos here</li>    
+            <div class = "user-box">
+            <a href = "#"><img  class = "user-post-box" src = "img/user.png" alt = "user"></a>
+            
+            </div>        
+            <div class = "photo-box">photos here</div>    
             <div class = "interaction-box">
-               <li><img style = "height: 2em;" class = "heart" id = "heart" src = "img/like.png" alt = "like" onclick = "likeClick()"></li>
-                <li><img style = "height: 2em;" class = "comment" id = "comment" src = "img/comment.png" alt = "comment" onclick = "comClick()"></li>
+               <div><img style = "height: 1.5em;" class = "heart" id = "heart" src = "img/like.png" alt = "like" onclick = "likeClick()"></div>
+                <div><img style = "height: 1.5em;" class = "message" id = "message" src = "img/comment.png" alt = "message" onmouseover = "comHover()" onmouseout="comLeave()"></div>
             </div>
-            </ul>
 
         </div>
     </div>

@@ -6,11 +6,13 @@ function likeClick(){
     document.getElementById("heart").src = "img/like.png";
   }
 }
-function comClick(){
-    if (document.getElementById("comment").src.endsWith('img/comment.png') == true){
-      document.getElementById("comment").src = "img/comment_dark.png";
-    }
-    else if (document.getElementById("comment").src.endsWith('img/comment_dark.png') == true){
-      document.getElementById("comment").src = "img/comment.png";
+function comHover(){
+    if (document.getElementById("message").src.endsWith('img/comment.png') == true){
+      document.getElementById("message").src = "img/comment_dark.png";
     }
   }
+function comLeave(){
+    if (document.getElementById("message").src.endsWith('img/comment_dark.png') == true){
+      document.getElementById("message").src = "img/comment.png";
+    }
+}
